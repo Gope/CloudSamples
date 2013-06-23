@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSamples", "CloudSamples\CloudSamples.csproj", "{39F40D4C-977A-4D64-B714-8302E8D965F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSamples.Tests", "CloudSamples.Tests\CloudSamples.Tests.csproj", "{53875184-D521-4BFF-A7E2-D35DBE1C4793}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39F40D4C-977A-4D64-B714-8302E8D965F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F40D4C-977A-4D64-B714-8302E8D965F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F40D4C-977A-4D64-B714-8302E8D965F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F40D4C-977A-4D64-B714-8302E8D965F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53875184-D521-4BFF-A7E2-D35DBE1C4793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53875184-D521-4BFF-A7E2-D35DBE1C4793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53875184-D521-4BFF-A7E2-D35DBE1C4793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53875184-D521-4BFF-A7E2-D35DBE1C4793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
