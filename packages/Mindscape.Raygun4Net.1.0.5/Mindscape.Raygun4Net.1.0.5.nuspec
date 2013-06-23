@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Mindscape.Raygun4Net</id>
+    <version>1.0.5</version>
+    <title>Mindscape.Raygun4Net</title>
+    <authors>Mindscape</authors>
+    <owners>Mindscape</owners>
+    <licenseUrl>https://raw.github.com/MindscapeHQ/raygun4net/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/MindscapeHQ/raygun4net</projectUrl>
+    <iconUrl>https://app.raygun.io/Content/Images/apple-touch-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Raygun.io Provider for .NET Framework</description>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <references>
+      <reference file="Mindscape.Raygun4Net.dll" />
+      <reference file="Mindscape.Raygun4Net.WinRT.dll" />
+      <reference file="Mindscape.Raygun4Net.WindowsPhone.dll" />
+    </references>
+  </metadata>
+</package>

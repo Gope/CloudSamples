@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Mindscape.Raygun4Net;
 
 namespace CloudSamples.Controllers
 {
@@ -18,6 +19,7 @@ namespace CloudSamples.Controllers
         // GET api/values/5
         public string Get(int id)
         {
+            new RaygunClient("6Zq4x7UB+5mdlq8eigy0Ow==").Send(new InvalidOperationException("Hier ist was schiefgegangen!"));
             return "value";
         }
 
