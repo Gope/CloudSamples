@@ -34,7 +34,24 @@ namespace CloudSamples.Controllers
         // GET api/emails/5
         public string Get(int id)
         {
-            return "value";
+            var documentStore = new DocumentStore
+            {
+                ConnectionStringName = "RavenDB"
+            };
+            documentStore.Initialize();
+
+            Email mail = null;
+            using (var session = documentStore.OpenSession())
+            {
+                mail = session.Query<Email>().FirstOrDefault();
+            }
+
+            if (mail != null)
+            {
+                return mail.Subject;
+            }
+
+            return string.Empty;
         }
 
         // POST api/emails
@@ -55,7 +72,10 @@ namespace CloudSamples.Controllers
                     session.SaveChanges();
                 }
 
-               
+                using (var session = documentStore.OpenSession())
+                {
+                    var mail = session.Query<Email>().Where(email1 => email1.Subject == "Hi").FirstOrDefault();
+                }
 
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
