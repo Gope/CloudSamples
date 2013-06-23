@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -21,6 +22,8 @@ namespace CloudSamples.Tests.Controllers
 
             // Act
             IEnumerable<string> result = controller.Get();
+
+            Debug.WriteLine("Running a cool test");
 
             // Assert
             Assert.IsNotNull(result);
